@@ -1,4 +1,4 @@
-package com.mkyong.common;
+package com.test.spring.annotations;
 
 public class Person {
 	private String name;

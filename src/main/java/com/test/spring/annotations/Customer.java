@@ -1,10 +1,11 @@
-package com.mkyong.common;
+package com.test.spring.annotations;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Required;
 
 public class Customer {
 
-	@Autowired(required=false)
+	@Autowired(required=true)
 	private Person person;
 	private int type;
 	private String action;
@@ -20,9 +21,10 @@ public class Customer {
 	public int getType() {
 		return type;
 	}
-
+	@Required
 	public void setType(int type) {
 		this.type = type;
+		System.out.println("Set is performed");
 	}
 
 	public String getAction() {
