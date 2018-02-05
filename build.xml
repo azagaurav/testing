@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!-- build file for lesson 2 -->
+
+<project name="tutorial" default="build" basedir=".">
+	<target name="build">
+		<javac srcdir="." debug="true" optimize="false" includes="**/*.java" destdir="." />
+	</target>
+</project>
