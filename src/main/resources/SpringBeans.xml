@@ -1,17 +1,22 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
-http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context-2.5.xsd">
 
 	<bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"/>
 	
-	<bean id="customer" class="com.test.spring.annotations.Customer" >
+	<!-- <bean id="customer" class="com.test.spring.annotations.Customer" >
 		<property name="action" value="buy" />
 		<property name="type" value="1" />
 	</bean>
 		
 	<bean id="personA" class="com.test.spring.annotations.Person" >
-		<property name="name" value="mkyongA" />
-	</bean>
+		<property name="name" value="Gaurav Singh" />
+	</bean> -->
+	<context:component-scan base-package="com.test.spring.annotations"></context:component-scan>
+	<context:annotation-config></context:annotation-config>
 	
 </beans>

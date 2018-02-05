@@ -2,7 +2,8 @@ package com.test.spring.annotations;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Required;
-
+import org.springframework.stereotype.Component;
+@Component
 public class Customer {
 
 	@Autowired(required=true)
@@ -21,7 +22,7 @@ public class Customer {
 	public int getType() {
 		return type;
 	}
-	@Required
+	//@Required
 	public void setType(int type) {
 		this.type = type;
 		System.out.println("Set is performed");
