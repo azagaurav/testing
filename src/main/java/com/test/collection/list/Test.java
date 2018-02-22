@@ -1,10 +1,4 @@
-/*
- * Created on 6 Apr, 2012
- *
- * TODO To change the template for this generated file go to
- * Window - Preferences - Java - Code Style - Code Templates
- */
-package com.test.collections;
+package com.test.collection.list;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -13,14 +7,6 @@ import java.util.List;
 
 import com.test.bean.Users;
 
-
-
-/**
- * @author kbg-web
- *
- * TODO To change the template for this generated type comment go to
- * Window - Preferences - Java - Code Style - Code Templates
- */
 public class Test {
 	 
 	    /** Creates a new instance of Test */
