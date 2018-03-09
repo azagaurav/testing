@@ -1,4 +1,4 @@
-package com.test.collections;
+package com.test.collection.list;
 
 public class MainClass {
 	static MapDemo mapDemo = new MapDemo();

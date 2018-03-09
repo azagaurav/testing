@@ -1,4 +1,4 @@
-package com.test.collections;
+package com.test.collection.list;
 
 import java.io.Serializable;
 import java.util.Collection;
