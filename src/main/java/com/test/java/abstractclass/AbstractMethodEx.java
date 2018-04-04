@@ -1,8 +1,8 @@
-package com.test.abstractclass;
+package com.test.java.abstractclass;
 
 public class AbstractMethodEx {
 
-	Figure fig=new Figure();
+	static Figure fig=new Figure();
 	public static void main(String[] args) {
 		
 		fig.printString();

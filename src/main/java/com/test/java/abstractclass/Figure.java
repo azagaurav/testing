@@ -1,4 +1,4 @@
-package com.test.abstractclass;
+package com.test.java.abstractclass;
 
 public abstract class Figure {
 	/*
