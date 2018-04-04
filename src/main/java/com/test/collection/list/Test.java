@@ -2,34 +2,27 @@ package com.test.collection.list;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.Iterator;
-import java.util.List;
 
+import com.test.bean.Employee;
 import com.test.bean.Users;
 
-public class Test {
-	 
-	    /** Creates a new instance of Test */
+public class Test implements Comparator<Employee>{
 	 
 	    public Test() {
 	 
 	    }
-	 
+	    static ArrayListImpl ali = new ArrayListImpl();
 	    public static void main(String[] args) {
+	    	
+	    	ArrayList<Users> userList = ali.createUsers();
+	    	ArrayList<Employee> employeeList = ali.createEmployee();
+	        
 	 
-	        List ts1 = new ArrayList();
+	        Collections.sort(userList);
 	 
-	        ts1.add(new Users ("Andy","Admin"));
-	 
-	        ts1.add(new Users ("Smith","HR"));
-	 
-	        ts1.add(new Users ("Mark","Non Admin"));
-	 
-	        ts1.add(new Users ("Dwane","Executive"));
-	 
-	        Collections.sort(ts1);
-	 
-	        Iterator itr = ts1.iterator();
+	        Iterator<Users> itr = userList.iterator();
 	 
 	        while(itr.hasNext()){
 	 
@@ -40,5 +33,10 @@ public class Test {
 	        }
 	 
 	    }
+		@Override
+		public int compare(Employee o1, Employee o2) {
+			// TODO Auto-generated method stub
+			return 0;
+		}
 	 
 	}

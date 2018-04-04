@@ -12,7 +12,7 @@ package com.test.bean;
  * TODO To change the template for this generated type comment go to Window -
  * Preferences - Java - Code Style - Code Templates
  */
-public class Users implements Comparable { // Users class implementing
+public class Users implements Comparable<Object> { // Users class implementing
 	// Comparable Interface
 
 	/** Creates a new instance of Users */
