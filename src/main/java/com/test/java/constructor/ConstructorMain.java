@@ -1,4 +1,4 @@
-package com.test.constructor;
+package com.test.java.constructor;
 
 public class ConstructorMain {
 

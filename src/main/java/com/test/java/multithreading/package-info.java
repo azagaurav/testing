@@ -5,4 +5,4 @@
  * @author Gaurav
  *
  */
-package com.test.multithreading;
+package com.test.java.multithreading;

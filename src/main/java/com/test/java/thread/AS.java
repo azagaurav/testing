@@ -1,4 +1,4 @@
-package com.test.thread;
+package com.test.java.thread;
 
 class PrintJob implements Runnable {
 	String name;

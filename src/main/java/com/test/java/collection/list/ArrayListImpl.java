@@ -1,10 +1,9 @@
-package com.test.collection.list;
+package com.test.java.collection.list;
 
 import java.util.ArrayList;
-import java.util.List;
 
-import com.test.bean.Employee;
-import com.test.bean.Users;
+import com.test.java.bean.Employee;
+import com.test.java.bean.Users;
 
 public class ArrayListImpl {
 

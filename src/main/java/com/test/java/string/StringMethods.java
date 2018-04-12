@@ -1,4 +1,4 @@
-package com.test.string;
+package com.test.java.string;
 
 public class StringMethods {
 

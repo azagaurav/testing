@@ -1,4 +1,4 @@
-package com.test.bean;
+package com.test.java.bean;
 
 public class Address {
 	private String city;

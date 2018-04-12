@@ -1,4 +1,4 @@
-package com.test.thread;
+package com.test.java.thread;
 
 class Display1 {
 	public synchronized void displayn() {

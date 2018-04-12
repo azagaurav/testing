@@ -1,12 +1,12 @@
-package com.test.collection.list;
+package com.test.java.collection.list;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.Iterator;
 
-import com.test.bean.Employee;
-import com.test.bean.Users;
+import com.test.java.bean.Employee;
+import com.test.java.bean.Users;
 
 public class Test implements Comparator<Employee>{
 	 

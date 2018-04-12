@@ -1,4 +1,4 @@
-package com.test.inner.classes;
+package com.test.java.inner.classes;
 
 public class HelloWorldAnonymousClasses {
 	  

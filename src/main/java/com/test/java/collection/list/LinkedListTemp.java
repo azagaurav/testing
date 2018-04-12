@@ -22,7 +22,7 @@
  *
  *
  */
-package com.test.collection.list;
+package com.test.java.collection.list;
 
 import java.util.AbstractSequentialList;
 import java.util.ArrayList;

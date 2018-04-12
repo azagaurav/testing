@@ -1,4 +1,4 @@
-package com.test.thread;
+package com.test.java.thread;
 
 public interface IBuffer {
     public void write(String value);

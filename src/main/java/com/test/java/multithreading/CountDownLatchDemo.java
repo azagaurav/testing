@@ -1,4 +1,4 @@
-package com.test.multithreading;
+package com.test.java.multithreading;
 
 import java.util.concurrent.CountDownLatch;
 import java.util.logging.Level;

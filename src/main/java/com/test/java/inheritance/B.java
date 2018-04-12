@@ -1,4 +1,4 @@
-package com.test.inheritance;
+package com.test.java.inheritance;
 
 import java.io.FileNotFoundException;
 

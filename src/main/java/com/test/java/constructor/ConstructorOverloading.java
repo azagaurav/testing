@@ -1,4 +1,4 @@
-package com.test.constructor;
+package com.test.java.constructor;
 
 import com.test.design.patterns.sigleton.EagerSingleton;
 

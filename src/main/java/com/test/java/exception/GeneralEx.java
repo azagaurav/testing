@@ -1,4 +1,4 @@
-package com.test.exception;
+package com.test.java.exception;
 
 public class GeneralEx {
 

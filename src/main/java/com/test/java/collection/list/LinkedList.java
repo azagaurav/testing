@@ -1,4 +1,4 @@
-package com.test.collection.list;
+package com.test.java.collection.list;
 //Java program for flattening a Linked List
 class LinkedList
 {

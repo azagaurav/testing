@@ -1,4 +1,4 @@
-package com.test.string;
+package com.test.java.string;
 
 // A bubble sort for Strings. 
 public class SortStringsArray {

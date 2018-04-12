@@ -1,4 +1,4 @@
-package com.test.multithreading;
+package com.test.java.multithreading;
 
 public class Singleton {
 	private static volatile Singleton _instance; // volatile variable

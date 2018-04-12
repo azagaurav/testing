@@ -1,4 +1,4 @@
-package com.test.thread;
+package com.test.java.thread;
 
 import java.util.HashSet;
 import java.util.Random;

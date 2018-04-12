@@ -1,4 +1,4 @@
-package com.test.asserts;
+package com.test.java.asserts;
 
 public class SmallestNumber {
 	public static void main(String args[]) {

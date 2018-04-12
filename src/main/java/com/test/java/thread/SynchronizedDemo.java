@@ -1,4 +1,4 @@
-package com.test.thread;
+package com.test.java.thread;
 
 class Display{
 	public static synchronized void wish(String name){

@@ -1,4 +1,4 @@
-package com.test.string;
+package com.test.java.string;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;

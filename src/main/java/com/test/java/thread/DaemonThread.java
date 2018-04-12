@@ -1,4 +1,4 @@
-package com.test.thread;
+package com.test.java.thread;
 
 public class DaemonThread extends Thread{
     
