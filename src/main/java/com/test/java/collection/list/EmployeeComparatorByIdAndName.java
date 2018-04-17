@@ -2,7 +2,7 @@ package com.test.java.collection.list;
 
 import java.util.Comparator;
 
-import com.test.bean.Employee;
+import com.test.java.bean.Employee;
 
 public class EmployeeComparatorByIdAndName implements Comparator<Employee> {
 
