@@ -2,6 +2,7 @@ package com.test.java.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.NamedNativeQueries;
@@ -38,7 +39,7 @@ public class Address {
 	@Column(name = "city")
 	private String city;
 
-	@OneToOne
+	@OneToOne(fetch = FetchType.EAGER)
 	@PrimaryKeyJoinColumn
 	private Employee employee;
 

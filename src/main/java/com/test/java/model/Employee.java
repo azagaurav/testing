@@ -3,6 +3,7 @@ package com.test.java.model;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EntityResult;
+import javax.persistence.FetchType;
 import javax.persistence.FieldResult;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -46,26 +47,6 @@ import org.hibernate.annotations.Cascade;
 	    })
 	    }
 	)
-/*
-@NamedNativeQuery(name="night&area", query="select night.id nid, night.night_duration, "
-	    + " night.night_date, area.id aid, night.area_id, area.name "
-	    + "from Night night, Area area where night.area_id = area.id",
-	                  resultSetMapping="joinMapping")
-	@SqlResultSetMapping(name="joinMapping", entities={
-	    @EntityResult(entityClass=Night.class, fields = {
-	        @FieldResult(name="id", column="nid"),
-	        @FieldResult(name="duration", column="night_duration"),
-	        @FieldResult(name="date", column="night_date"),
-	        @FieldResult(name="area", column="area_id"),
-	        discriminatorColumn="disc"
-	    }),
-	    @EntityResult(entityClass=org.hibernate.test.annotations.query.Area.class, fields = {
-	        @FieldResult(name="id", column="aid"),
-	        @FieldResult(name="name", column="name")
-	    })
-	    }
-	)*/
-
 
 public class Employee {
 
@@ -80,7 +61,7 @@ public class Employee {
 	@Column(name = "emp_salary")
 	private double salary;
 
-	@OneToOne(mappedBy = "employee")
+	@OneToOne(mappedBy = "employee", fetch=FetchType.EAGER)
 	@Cascade(value = org.hibernate.annotations.CascadeType.ALL)
 	private Address address;
 

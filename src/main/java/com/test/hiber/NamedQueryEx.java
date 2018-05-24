@@ -2,6 +2,7 @@ package com.test.hiber;
 
 import java.util.List;
 
+import org.hibernate.Hibernate;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -12,6 +13,7 @@ import com.test.java.model.Address;
 import com.test.java.model.Employee;
 
 public class NamedQueryEx {
+	@SuppressWarnings("unchecked")
 	public static void main(String[] str) {
 
 		System.out.println("Hello World!");
@@ -29,7 +31,7 @@ public class NamedQueryEx {
 			System.out.println("List of Employees::" + emp.getId() + ","
 					+ emp.getAddress().getCity());
 		}
-
+		System.out.println(Hibernate.isInitialized(empList));
 		query = session.getNamedQuery("HQL_GET_EMPLOYEE_BY_ID");
 		query.setInteger("id", 2);
 		Employee emp = (Employee) query.uniqueResult();
