@@ -3,20 +3,23 @@ package com.test.java.string;
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
 
+import com.test.java.bean.Address;
+import com.test.java.bean.Contacts;
+
 import jdk.nashorn.internal.ir.annotations.Immutable;
 
-import com.test.bean.Contacts;
-
+@SuppressWarnings("restriction")
 public class MutableClass {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Contacts c1 = new Contacts("Mani", "9650239588");
-		System.out.println("NAME ::: " + c1.getName() + "  Mobile ::: "
-				+ c1.getMobile());
-		c1 = new Contacts("Gaurav", "9717031315");
-		System.out.println("NAME ::: " + c1.getName() + "  Mobile ::: "
-				+ c1.getMobile());
+		Contacts c1 = new Contacts("Mani", "9650239588", new Address("city", "state", "country"));
+		System.out.println("NAME ::: " + c1.getName() + "  Mobile ::: " + c1.getMobile());
+		c1.getAddress().setCountry("country1");
+		System.out.println(c1.toString());
+		c1 = new Contacts("Gaurav", "9717031315", new Address("city", "state", "country"));
+		System.out.println("NAME ::: " + c1.getName() + "  Mobile ::: " + c1.getMobile());
+		System.out.println(isImmutable(c1));
 	}
 
 	static boolean isImmutable(Contacts obj) {

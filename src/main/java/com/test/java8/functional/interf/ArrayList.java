@@ -10,9 +10,30 @@ public class ArrayList implements List, AnimalList {
 		al.defaultAdd();
 		l.add(5);
 		l.defaultAdd();
-		Eatable als = () -> System.out.println("Lambda Expression : ");
-		als.eat();
-		List.staticAdd();		
+		Eatable eable = () -> System.out.println("Lambda Expression for Eatable Functional Interface");
+		eable.eat();
+		List.staticAdd();
+		MathOperations mo = (int x, int y)-> {
+			System.out.println("Adding Operation : "+(x+y));
+			return x+y;
+		};
+		mo.operations(3, 5);
+		
+		MathOperations addition = (x, y) -> x+y;
+		MathOperations substraction = (int x, int y) -> x-y;
+		MathOperations multiplication = (int x, int y) -> x*y;
+		MathOperations division = (int x, int y) -> x/y;
+		
+		System.out.println("Adding Operator : "+ al.operator(5, 10, addition));
+		System.out.println("substraction Operator : "+ al.operator(5, 10, substraction));
+		System.out.println("multiplication Operator : "+ al.operator(5, 10, multiplication));
+		System.out.println("division Operator : "+ al.operator(20, 10, division));
+		
+	}
+
+	private int operator(int a, int b, MathOperations mo) {
+		// TODO Auto-generated method stub
+		return mo.operations(a, b);
 	}
 
 	@Override

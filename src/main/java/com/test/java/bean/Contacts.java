@@ -13,10 +13,19 @@ package com.test.java.bean;
 public final class Contacts {
 	private final String name;
 	private final String mobile;
+	private final Address address;
 
-	public Contacts(String name, String mobile) {
+	public Contacts(String name, String mobile, Address address) {
 		this.name = name;
 		this.mobile = mobile;
+		this.address = address;
+	}
+
+	/**
+	 * @return the address
+	 */
+	public Address getAddress() {
+		return address;
 	}
 
 	public String getName() {
@@ -26,5 +35,8 @@ public final class Contacts {
 	public String getMobile() {
 		return mobile;
 	}
+	public String toString(){  
+	    return name+" "+mobile+" "+address.toString();  
+	} 
 
 }

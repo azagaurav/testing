@@ -3,6 +3,9 @@ package com.test.java.collection.map;
 import java.util.HashMap;
 import java.util.Map;
 
+import com.test.java.bean.Person;abstract
+
+
 public class MapEx {
 
 	public static void main(String[] args) {
@@ -26,6 +29,14 @@ public class MapEx {
 		System.out.println(students1.entrySet());
 		System.out.println(10 ^ (6-1));
 		System.out.println(students1.values());
+		System.out.println("------------------------------");
+		Map<Integer, Person> students3 = new HashMap<Integer, Person> ();
+		students3.put(null, null);
+		students3.put(1560000000, new Person("name", 100, "address"));
+		students3.put(2, new Person("name1", 100, "address"));
+		students3.put(3, new Person("name2", 100, "address"));
+		students3.put(4, new Person("name3", 100, "address"));
+		System.out.println(students3.size());
 	}
 
 }
